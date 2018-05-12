@@ -5,7 +5,8 @@
 
     <h1><%=blog.title%></h1>
     <img src="<%=blog.image%>">
-    <span><%=blog.body%></span>
+    <span><%=blog.body.substring(0, 100)%>.....</span>
+    <a href="/blogs/<%=blog._id%>">Read More</a>
 <%}) %>
 
 <%include ./partials/footer%>
